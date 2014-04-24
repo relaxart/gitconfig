@@ -2,5 +2,7 @@ gitconfig
 =========
   
 Clone repository in home directory. After that, add in your .gitconfig  
+{code}
 [include]  
-[TAB]path = gitconfig/config  
+	path = gitconfig/config  
+{code}
