@@ -1,0 +1,12 @@
+[alias]
+        co = checkout
+        ci = commit
+        st = status
+        br = branch
+        su = submodule update --init
+        pr = pull --rebase
+        cl = !git clean -fd && git reset --hard && git submodule foreach --recursive 'git clean -fd && git reset --hard'
+        pa = !git pull && git submodule update --init --recursive
+        pc = !git cl && git pa
+        dlb = !git branch --merged | grep -v \\* | xargs git branch -D
+        lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
