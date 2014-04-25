@@ -1,6 +1,5 @@
-gitconfig
-=========
-  
+## Settings
+
 Clone repository in home directory. After that, add in your .gitconfig  
 
 	[include]  
