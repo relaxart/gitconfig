@@ -7,6 +7,8 @@ Clone repository in home directory. After that, add in your .gitconfig
 		path = gitconfig/config  
 
 ## Commands
-git co = git checkout 
-git ci = git commit
-git st = git status
+git co = Checkout  
+git ci = Commit  
+git st = Status  
+git br = Branch  
+git su = Recursive submodule update + initialization  
