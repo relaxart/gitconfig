@@ -1,4 +1,4 @@
-## Settings
+## Install
 
 Clone repository in home directory. After that, add in your .gitconfig  
 
@@ -17,5 +17,5 @@ Clone repository in home directory. After that, add in your .gitconfig
 **git pc** - Two command cl + ps  
 **git dlb** - Remove all local branches (Warning: remove not-commited branch two)  
 **git lg** - Pretty git log  
-**git ms** - Git stash and execute stash in submodules  
-**git msp** - Git statsh pop and execute stash pop in submodules  
+**git multi-stash** - Git stash and execute stash in submodules  
+**git multi-stash-pop** - Git statsh pop and execute stash pop in submodules  
