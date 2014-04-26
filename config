@@ -8,8 +8,10 @@
         cl = !git clean -fd && git reset --hard && git submodule foreach --recursive 'git clean -fd && git reset --hard'
         ps = !git pull && git submodule update --init --recursive
         pc = !git cl && git ps
-        dlb = !git branch --merged | grep -v \\* | xargs git branch -D
         lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
+	delete-local-merged-branch = !git branch --merged | grep -v \\* | xargs git branch -D
 	multi-stash = !git stash && git submodule foreach --recursive 'git stash'
 	multi-stash-pop = !sh ~/gitconfig/sh/multi-stash-pop.sh
+	submodule-checkout-master = !git submodule foreach --recursive 'git checkout master && git pull'
+	
