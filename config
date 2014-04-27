@@ -9,9 +9,20 @@
         ps = !git pull && git submodule update --init --recursive
         pc = !git cl && git ps
         lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	dlb = !git branch --merged | grep -v \\* | xargs git branch -D
+		
+	#Submodule only
+	s-branch = !bash ~/gitconfig/sh/submodule.sh "branch"
+	s-stash = !bash ~/gitconfig/sh/submodule.sh "stash"
+	s-stash-pop = !bash ~/gitconfig/sh/submodule.sh "stash pop"
+	s-checkout = !bash ~/gitconfig/sh/submodule.sh "checkout"
+	s-commit = !bash ~/gitconfig/sh/submodule.sh "commit"
+	s-pull = !bash ~/gitconfig/sh/submodule.sh "pull"
 
-	delete-local-merged-branch = !git branch --merged | grep -v \\* | xargs git branch -D
-	multi-stash = !git stash && git submodule foreach --recursive 'git stash'
-	multi-stash-pop = !sh ~/gitconfig/sh/multi-stash-pop.sh
-	submodule-checkout-master = !git submodule foreach --recursive 'git checkout master && git pull'
-	
+	#Main repository + submodule
+        m-branch = !bash ~/gitconfig/sh/multi.sh "branch"
+	m-stash = !bash ~/gitconfig/sh/multi.sh "stash"
+        m-stash-pop = !bash ~/gitconfig/sh/multi.sh "stash pop"
+        m-checkout = !bash ~/gitconfig/sh/multi.sh "checkout"
+        m-commit = !bash ~/gitconfig/sh/multi.sh "commit"
+        m-pull = !bash ~/gitconfig/sh/multi.sh "pull"

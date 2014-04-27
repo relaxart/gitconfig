@@ -5,7 +5,7 @@ Clone repository in home directory. After that, add in your .gitconfig
 	[include]  
 		path = gitconfig/config  
 
-## Commands
+## Short commands
 **git co** - Git checkout  
 **git ci** - Git commit  
 **git st** - Git status  
@@ -16,9 +16,20 @@ Clone repository in home directory. After that, add in your .gitconfig
 **git ps** - Git pull with rebase and submodule recursive update with initialization  
 **git pc** - Two command cl + ps  
 **git lg** - Pretty git log  
-
 **git delete-local-merged-branch** - Remove all local merged branches  
-**git multi-stash** - Git stash and execute stash in submodules  
-**git multi-stash-pop** - Git statsh pop and execute stash pop in submodules  
-**git submodule-checkout-master** -- Checkout all submodules to master and pull
 
+## Submodule commands
+- git s-branch   
+- git s-stash 
+- git s-stash-pop 
+- git s-checkout
+- git s-commit
+- git s-pull
+  
+## Main repository + submodule commands
+- git m-branch
+- git m-stash
+- git m-stash-pop
+- git m-checkout
+- git m-commit
+- git m-pull
