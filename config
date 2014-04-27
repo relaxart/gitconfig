@@ -13,14 +13,19 @@
 		
 	#Submodule only
 	s-branch = !bash ~/gitconfig/sh/submodule.sh "branch"
+	s-status = !bash ~/gitconfig/sh/submodule.sh "status"
 	s-stash = !bash ~/gitconfig/sh/submodule.sh "stash"
 	s-stash-pop = !bash ~/gitconfig/sh/submodule.sh "stash pop"
 	s-checkout = !bash ~/gitconfig/sh/submodule.sh "checkout"
 	s-commit = !bash ~/gitconfig/sh/submodule.sh "commit"
 	s-pull = !bash ~/gitconfig/sh/submodule.sh "pull"
+	s-path = !git submodule | awk '{ print $2 }'
+	s-ignore-add = !sh ~/gitconfig/sh/ignore-add.sh
+	s-ignore-remove = !sh ~/gitconfig/sh/ignore-remove.sh
 
 	#Main repository + submodule
         m-branch = !bash ~/gitconfig/sh/multi.sh "branch"
+        m-status = !bash ~/gitconfig/sh/multi.sh "status"
 	m-stash = !bash ~/gitconfig/sh/multi.sh "stash"
         m-stash-pop = !bash ~/gitconfig/sh/multi.sh "stash pop"
         m-checkout = !bash ~/gitconfig/sh/multi.sh "checkout"

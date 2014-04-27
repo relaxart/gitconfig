@@ -5,6 +5,10 @@ Clone repository in home directory. After that, add in your .gitconfig
 	[include]  
 		path = gitconfig/config  
 
+## Add/Remove submodule ignore
+**git s-ignore-add submodule_path**
+**git s-ignore-remove submodule_path**
+
 ## Short commands
 **git co** - Git checkout  
 **git ci** - Git commit  
@@ -25,6 +29,7 @@ Clone repository in home directory. After that, add in your .gitconfig
 - git s-checkout
 - git s-commit
 - git s-pull
+- git s-path
   
 ## Main repository + submodule commands
 - git m-branch
