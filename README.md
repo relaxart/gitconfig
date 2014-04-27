@@ -6,8 +6,8 @@ Clone repository in home directory. After that, add in your .gitconfig
 		path = gitconfig/config  
 
 ## Add/Remove submodule ignore
-**git s-ignore-add submodule_path**
-**git s-ignore-remove submodule_path**
+**git s-ignore-add submodule_path**  
+**git s-ignore-remove submodule_path**  
 
 ## Short commands
 **git co** - Git checkout  
