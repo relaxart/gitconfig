@@ -12,4 +12,3 @@ for fn in `git submodule|awk '{ print $2 }'`; do
 	cd $REPO_PATH'/'$fn && git $CMD $PARAMS
 	cd $REPO_PATH
 done
-cd $REPO_PATH

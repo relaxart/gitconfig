@@ -16,7 +16,7 @@ Clone repository in home directory. After that, add in your .gitconfig
 **git ps** - Git pull with rebase and submodule recursive update with initialization  
 **git pc** - Two command cl + ps  
 **git lg** - Pretty git log  
-**git delete-local-merged-branch** - Remove all local merged branches  
+**git dlb** - Remove all local merged branches  
 
 ## Submodule commands
 - git s-branch   
