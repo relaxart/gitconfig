@@ -1,12 +1,13 @@
 #!/bin/sh
 
+source $(dirname $0)/color.sh
+
 MODULES=$(git rev-parse --show-toplevel)'/.git/.s-modules'
 
 if [ ! $1 ] 
 then 
-	tput setaf 1 
-	echo Fatal: no submodule path given.
-	tput sgr0
+	echo ${PURPLE}Fatal: no submodule path given.${WHITE}
+	exit
 fi
 
 if [ ! -f $MODULES ] 
@@ -19,12 +20,7 @@ then
 	cat $MODULES | awk '{ if ($1 != ".csc") print $1 }' > ~/gitconfig/tmp
 	cat ~/gitconfig/tmp > $MODULES
 	rm ~/gitconfig/tmp
-		
-	tput setaf 2
-       	echo Submodle $1 delete from ignore.
-       	tput sgr0
+       	echo ${GREEN}Submodle $1 delete from ignore.${WHITE}
 else
-	tput setaf 1
-       	echo Fatal: Submodule not found.
-       	tput sgr0
+       	echo ${PURPLE}Fatal: Submodule not found.${WHITE}
 fi
