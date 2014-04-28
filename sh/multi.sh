@@ -4,6 +4,10 @@ CMD=$1
 PARAMS=$(echo $@|sed -e "s/$CMD//")
 REPO_PATH=$(pwd)
 MODULES=$(git rev-parse --show-toplevel)'/.git/.s-modules'
+if [ ! -f $MODULES ]
+then
+        touch $MODULES
+fi
 
 git $CMD $PARAMS
 for fn in `git submodule|awk '{ print $2 }'`; do
