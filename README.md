@@ -28,13 +28,17 @@ Clone repository in home directory. After that, add in your .gitconfig
 - git s-stash-pop 
 - git s-checkout
 - git s-commit
-- git s-pull
-- git s-path
+- git s-pull  
+- git s-push  
+- git s-merge  
+- git s-path  
   
 ## Main repository + submodule commands
 - git m-branch
 - git m-stash
 - git m-stash-pop
 - git m-checkout
-- git m-commit
-- git m-pull
+- git m-commit  
+- git m-pull 
+- git m-push   
+- git m-merge  

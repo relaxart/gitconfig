@@ -19,6 +19,8 @@
 	s-checkout = !bash ~/gitconfig/sh/submodule.sh "checkout"
 	s-commit = !bash ~/gitconfig/sh/submodule.sh "commit"
 	s-pull = !bash ~/gitconfig/sh/submodule.sh "pull"
+	s-push = !bash ~/gitconfig/sh/submodule.sh "push"
+	s-merge = !bash ~/gitconfig/sh/submodule.sh "merge"
 	s-path = !git submodule | awk '{ print $2 }'
 	s-ignore-add = !sh ~/gitconfig/sh/ignore-add.sh
 	s-ignore-remove = !sh ~/gitconfig/sh/ignore-remove.sh
@@ -31,3 +33,5 @@
         m-checkout = !bash ~/gitconfig/sh/multi.sh "checkout"
         m-commit = !bash ~/gitconfig/sh/multi.sh "commit"
         m-pull = !bash ~/gitconfig/sh/multi.sh "pull"
+        m-push = !bash ~/gitconfig/sh/multi.sh "push"
+        m-merge = !bash ~/gitconfig/sh/multi.sh "merge"
