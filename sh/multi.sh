@@ -11,7 +11,6 @@ then
         touch $MODULES
 fi
 
-git $CMD $PARAMS
 for fn in `git submodule|awk '{ print $2 }'`; do
         if [ `cat $MODULES | awk -v s=$fn '{ if( $1==s) print 0 }' | wc -l` != 1 ]
         then
@@ -22,3 +21,4 @@ for fn in `git submodule|awk '{ print $2 }'`; do
 		cd $REPO_PATH
 	fi
 done
+git $CMD $PARAMS
