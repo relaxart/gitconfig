@@ -12,6 +12,7 @@
 	dlb = !git branch --merged | grep -v \\* | xargs git branch -D
 		
 	#Submodule only
+	s-add = !bash ~/gitconfig/sh/submodule.sh "add"
 	s-branch = !bash ~/gitconfig/sh/submodule.sh "branch"
 	s-status = !bash ~/gitconfig/sh/submodule.sh "status"
 	s-stash = !bash ~/gitconfig/sh/submodule.sh "stash"
@@ -26,6 +27,7 @@
 	s-ignore-remove = !sh ~/gitconfig/sh/ignore-remove.sh
 
 	#Main repository + submodule
+        m-add = !bash ~/gitconfig/sh/multi.sh "add"
         m-branch = !bash ~/gitconfig/sh/multi.sh "branch"
         m-status = !bash ~/gitconfig/sh/multi.sh "status"
 	m-stash = !bash ~/gitconfig/sh/multi.sh "stash"
