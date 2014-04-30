@@ -23,8 +23,8 @@
 	s-push = !bash ~/gitconfig/sh/submodule.sh "push"
 	s-merge = !bash ~/gitconfig/sh/submodule.sh "merge"
 	s-path = !git submodule | awk '{ print $2 }'
-	s-ignore-add = !sh ~/gitconfig/sh/ignore-add.sh
-	s-ignore-remove = !sh ~/gitconfig/sh/ignore-remove.sh
+	s-ignore-add = !bash ~/gitconfig/sh/ignore-add.sh
+	s-ignore-remove = !bash ~/gitconfig/sh/ignore-remove.sh
 
 	#Main repository + submodule
         m-add = !bash ~/gitconfig/sh/multi.sh "add"
